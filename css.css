@@ -1,0 +1,382 @@
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+  
+
+body {
+    background-color: rgb(234, 245, 234);
+    padding: 0;
+    margin: 0;
+}
+
+.div-menu {
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    background-color: #7510F7;
+    transition: width 0.35s ease, height 0.35s ease, background 0.5s linear;
+    position: fixed;
+    float: right;
+    z-index: 1000;
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: 700px;
+    text-align: center;    
+}
+
+
+
+
+
+
+.menu-active {
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 700px;
+    color: white;
+    background-color: #7510F7;
+    
+
+}
+
+.menu-change {
+    background-color:white;
+    color: #7510F7;
+}
+
+.menu-active a {
+    color: white;
+}
+
+.menu-change a {
+    color: #7510F7;
+}
+
+
+.btn {
+    float: right;
+    position: relative;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 28px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    background-color: #7510F7;
+    color: white;
+    transition: background 0.5s linear;
+}
+
+.btn-active {
+    background-color: white;
+    color:#7510F7;
+}
+
+.btn-change {
+    background-color:white;
+    color: #7510F7;
+}
+.btn-active-change {
+    color: white;
+    background-color:#7510F7;
+}
+
+
+
+.button-place {
+    position: fixed;
+    z-index: 1001;
+    top: 20px;
+    right: 20px;
+    border: none;
+    user-select: none;
+    border: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+    opacity: 1;
+    animation: 0.1s fadeOut;
+    animation-fill-mode: forwards;
+    transition: opacity 0s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.link-holder {
+    align-self: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    color: white;
+    margin: auto;
+    padding-top: 70px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-home {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(188deg, rgba(253, 187, 4, 0.849) ,rgb(226, 108, 39), rgb(226, 108, 39));
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    min-height: 750px;
+}
+
+.greet {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 70px 0 0 0;
+    font-weight: 600px;
+    opacity: 1 !important;
+}
+
+.title-icon {
+    font-size: 80px !important;
+    color:#7510F7 !important;
+}
+
+.title-card {
+    color:black !important;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.card-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.div-about {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    margin: -258px auto;
+    padding: 0;
+    background-color: #1f28a4;
+    background: radial-gradient(ellipse,rgb(50, 138, 238) ,#125fb8, #084C9A, #084C9A);
+    text-align: center;
+}
+
+.wave {
+    position: absolute;
+    margin: auto;
+    padding: 30;
+    width: 100%;
+    height: 100px;
+    background-image: url('/wave.png');
+    background-color: #e26c27;
+    background-size: 1000px;
+    z-index: 10;
+    animation: animate linear 15s infinite 0s;
+}
+
+   .bubbles{
+    width:100%;
+    height: 100%;
+    z-index:0;
+    overflow:hidden;
+    top:0;
+    left:0;
+  }
+
+  .bubble{
+    width:40px;
+    height: 40px;
+    background:#f1f1f1;
+    border-radius:50%;
+    opacity:0.5;
+    animation: rise 10s infinite linear;
+  }
+
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+
+
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0; 
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(500px, -500px);
+    }
+    100%{
+      transform:translate(1000px, -1000px);
+    }
+  }
+
+.div-contact {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.big-div {
+    padding: 30px 0 30px 0;
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    opacity: 1 !important;
+}
+
+.div1, .div2{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    border-width: 1px;
+    z-index: 20;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(33, 14, 204);
+}
+
+.div-projects {
+    height: 500px;
+}
+
+.container{
+    position: relative;
+}
+
+.text { 
+    position: relative;
+    padding-top: 220px;
+    margin-top: auto;
+}
+
+.about-text {
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.text h1, h2 {
+    color: black;
+}
+
