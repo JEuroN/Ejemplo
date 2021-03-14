@@ -25,7 +25,7 @@ $('btn').addEventListener('click', ()=>{
 window.addEventListener('scroll', ()=>{
     let btn = $('button-place');
     let btnbound = getOffset(btn);
-    let divAbout = $('About')
+    let divAbout = $('text-holder')
     let AboutBound = getOffset(divAbout);
     if(btnbound.top > AboutBound.top){
         if(!$('btn').classList.contains('btn-change')){
